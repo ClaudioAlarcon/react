@@ -1,9 +1,15 @@
+import { Outlet } from "react-router";
+import Navmenu from "./components/Navmenu";
+
 const App = () => {
     return (
         <div>
-            <h1>Hello World</h1>
+            <Navmenu />
+            <div className="container">
+                <Outlet />
+            </div>
         </div>
     )
 }
 
-export default App
+export default App;
